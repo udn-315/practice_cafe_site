@@ -171,3 +171,92 @@ img{
     font-size: 12px;
     margin-top: 6px;
 }
+
+.btn {
+    display: block;
+    position: relative;
+    width: 220px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #24a8bf;
+    line-height: 1;
+    text-align: center;
+    margin:  0 auto;
+    padding: 18px 0;
+    transition: opacity 0.3s;
+    border: 1px solid #24a8bf;
+    border-radius: 3px;
+}
+
+.btn::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    width: 5px;
+    height: 9px;
+    transform: translateY(-50%);
+    background-image: url("./images/icon_arrow-right.png");
+    background-repeat: no-repeat;
+    background-size: 5px 9px;
+}
+
+/*--------------------------------
+フッター
+---------------------------------*/
+.footer {
+    padding: 70px 0 30px;
+    background-color: #000;
+}
+
+.footer .logo {
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    line-height: 0.05em;
+    color: #8b8b8b;
+    text-align: center;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* レイアウト */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* ヘッダー */
+    .header {
+        padding: 30px 0;
+    }
+
+    .header .logo {
+        width: 172px;
+    }
+
+    /* グローバルナビ */
+    .global-nav {
+        padding: 30px 0;
+    }
+
+    .global-nav ul li {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    /* コンセプト */
+    .concept {
+        padding: 40px 0;
+    }
+}
